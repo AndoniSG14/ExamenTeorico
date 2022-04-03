@@ -76,5 +76,41 @@ namespace Servidor
         {
             leerTXT(buscarArchivoTXT());
         }
+
+        private void btnTEST_Click(object sender, EventArgs e)
+        {
+            using (DataTable dtT = new DataTable())
+            {
+                dtT.Columns.Add("Nombre");
+                dtT.Columns.Add("Apellido");
+                dtT.Columns.Add("Edad");
+                string input = txtTEST.Text;
+                string[] conceptos = input.Split('%');
+                dtT.Rows.Add(conceptos[0], conceptos[1], conceptos[2]);
+                StringBuilder sb = new StringBuilder();
+
+                string[] columnNames = dtT.Columns.Cast<DataColumn>().
+                                                  Select(column => column.ColumnName).
+                                                  ToArray();
+                sb.AppendLine(string.Join("%", columnNames));
+
+                foreach (DataRow row in dtT.Rows)
+                {
+                    string[] fields = row.ItemArray.Select(field => field.ToString()).
+                                                    ToArray();
+                    sb.AppendLine(string.Join("%", fields));
+                }
+                var directorio = $@"{Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments)}\DBEXAMENTEORICO\";
+
+                if (!Directory.Exists(directorio))
+                {
+                    Directory.CreateDirectory(directorio);
+                }
+                File.WriteAllText($@"{directorio}{conceptos[0]}.txt", sb.ToString(), Encoding.UTF8);
+                MessageBox.Show($@"Guardado satisfactoriamente en: {directorio} como {conceptos[0]}.txt");
+            };
+            
+            
+        }
     }
 }
