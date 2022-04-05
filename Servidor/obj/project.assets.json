@@ -8,19 +8,24 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Aron Aguilar\\.nuget\\packages\\": {}
+    "C:\\Users\\Andoni\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aron Aguilar\\Source\\Repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
+      "projectUniqueName": "C:\\Users\\Andoni\\source\\repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
       "projectName": "Servidor",
-      "projectPath": "C:\\Users\\Aron Aguilar\\Source\\Repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
-      "packagesPath": "C:\\Users\\Aron Aguilar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aron Aguilar\\Source\\Repos\\ExamenTeorico\\Servidor\\obj\\",
+      "projectPath": "C:\\Users\\Andoni\\source\\repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
+      "packagesPath": "C:\\Users\\Andoni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andoni\\source\\repos\\ExamenTeorico\\Servidor\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Aron Aguilar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Andoni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -55,12 +60,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[5.0.14, 5.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
@@ -69,7 +68,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
       }
     }
   }

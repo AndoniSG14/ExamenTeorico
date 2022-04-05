@@ -18,3 +18,5 @@ C:\Users\Aron Aguilar\Source\Repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenT
 C:\Users\Aron Aguilar\Source\Repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenTeorico.csproj.CoreCompileInputs.cache
 C:\Users\Aron Aguilar\Source\Repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenTeorico.exe
 C:\Users\Aron Aguilar\Source\Repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenTeorico.pdb
+C:\Users\Andoni\source\repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenTeorico.Datos.resources
+C:\Users\Andoni\source\repos\ExamenTeorico\ExamenTeorico\obj\Debug\ExamenTeorico.Consulta.resources
