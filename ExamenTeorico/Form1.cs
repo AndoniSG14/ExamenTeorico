@@ -21,7 +21,8 @@ namespace ExamenTeorico
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-
+            
+            
 
             this.panelPrincipal.Controls.Clear();
 
@@ -48,6 +49,16 @@ namespace ExamenTeorico
             frmconsulta.TopLevel = false;
             panelPrincipal.Controls.Add(frmconsulta);
             frmconsulta.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 

@@ -29,6 +29,7 @@ namespace ExamenTeorico
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.btnConsulta = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -39,32 +40,55 @@ namespace ExamenTeorico
             // 
             // btnConsulta
             // 
+            this.btnConsulta.BackColor = System.Drawing.Color.Black;
+            this.btnConsulta.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulta.ForeColor = System.Drawing.Color.White;
+            this.btnConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnConsulta.Image")));
+            this.btnConsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConsulta.Location = new System.Drawing.Point(13, 13);
             this.btnConsulta.Name = "btnConsulta";
             this.btnConsulta.Size = new System.Drawing.Size(312, 162);
             this.btnConsulta.TabIndex = 39;
-            this.btnConsulta.Text = "Consulta";
-            this.btnConsulta.UseVisualStyleBackColor = true;
+            this.btnConsulta.Text = "CONSULTA     ";
+            this.btnConsulta.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConsulta.UseVisualStyleBackColor = false;
             this.btnConsulta.Click += new System.EventHandler(this.btnConsulta_Click);
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackColor = System.Drawing.Color.Black;
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
+            this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(13, 190);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(312, 162);
             this.btnNuevo.TabIndex = 40;
-            this.btnNuevo.Text = "Agregar";
-            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Text = "AGREGAR       ";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // button5
             // 
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button5.Location = new System.Drawing.Point(13, 369);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(311, 162);
             this.button5.TabIndex = 41;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Text = "SALIR              ";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // flowLayoutPanel1
             // 
@@ -76,9 +100,9 @@ namespace ExamenTeorico
             // 
             // panelPrincipal
             // 
-            this.panelPrincipal.Location = new System.Drawing.Point(339, 1);
+            this.panelPrincipal.Location = new System.Drawing.Point(334, -2);
             this.panelPrincipal.Name = "panelPrincipal";
-            this.panelPrincipal.Size = new System.Drawing.Size(925, 541);
+            this.panelPrincipal.Size = new System.Drawing.Size(941, 545);
             this.panelPrincipal.TabIndex = 43;
             this.panelPrincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPrincipal_Paint);
             // 
@@ -87,13 +111,15 @@ namespace ExamenTeorico
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 543);
-            this.Controls.Add(this.panelPrincipal);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnConsulta);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.panelPrincipal);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
