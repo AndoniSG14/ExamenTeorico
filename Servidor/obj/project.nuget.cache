@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2ZzAvyfRtaSSIV2DCQpmI9dfVK15mvTScOeTuLcdlPr1EEY3+LL8ZAGCDYI914xKWlhP3MlAEagyFX0ZzWliiw==",
+  "dgSpecHash": "J5svHa4ztLXr5IyvmlMeCL+tB+OdbLcJ0kvx01luw2rDHsBxjs1LqHvtZXnTBA6rDkOaCKzMBpg2sxA24WckTw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aron Aguilar\\Source\\Repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Aron Aguilar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Andoni\\source\\repos\\ExamenTeorico\\Servidor\\Servidor.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
